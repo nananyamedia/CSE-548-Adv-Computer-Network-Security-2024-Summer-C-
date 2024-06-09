@@ -1,0 +1,75 @@
+[
+
+  {
+
+    "priority": 1,
+
+    "src_ip": "192.168.2.10",
+
+    "dst_ip": "192.168.2.30",
+
+    "nw_proto": "icmp",
+
+    "action": "deny"
+
+  },
+
+  {
+
+    "priority": 2,
+
+    "src_ip": "192.168.2.20",
+
+    "dst_ip": "192.168.2.40",
+
+    "nw_proto": "icmp",
+
+    "action": "deny"
+
+  },
+
+  {
+
+    "priority": 3,
+
+    "src_ip": "192.168.2.20",
+
+    "dst_ip": "any",
+
+    "nw_proto": "tcp",
+
+    "dst_port": 80,
+
+    "action": "deny"
+
+  },
+
+  {
+
+    "priority": 4,
+
+    "src_ip": "192.168.2.10",
+
+    "dst_ip": "192.168.2.20",
+
+    "nw_proto": "tcp",
+
+    "action": "deny"
+
+  },
+
+  {
+
+    "priority": 5,
+
+    "src_ip": "192.168.2.10",
+
+    "dst_ip": "192.168.2.20",
+
+    "nw_proto": "udp",
+
+    "action": "deny"
+
+  }
+
+]
